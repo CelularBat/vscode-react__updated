@@ -1,45 +1,19 @@
-# Reactjs
-
 ## VS Code Reactjs snippets
+https://github.com/xabikos/vscode-react/tree/master
 
----
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.ReactSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
+## Changes in this fork:
 
-This extension contains code snippets for [Reactjs][react] and is based on the awesome [babel-sublime-snippets][babelsublime] package.
+ - Removed components lifetime methods removed in React 17 (https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html)
+ - Changed `rcfc` accordingly
 
-## Installation
+### In files:
+snippets/snippets.json
 
-In order to install an extension you need to launch the Command Palette (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
-There you have either the option to show the already installed snippets or install new ones.
-
-## Supported languages (file extensions)
-
-- JavaScript (.js)
-- TypeScript (.ts)
-- JavaScript React (.jsx)
-- TypeScript React (.tsx)
-
-## Breaking change in version 2.0.0
-
-Removed support for jsx language as it was giving errors in developer tools [#39](https://github.com/xabikos/vscode-react/issues/39)
-
-## Breaking change in version 1.0.0
-
-Up until verion 1.0.0 all the [JavaScript snippets][javacript] where part of the extension. In order to avoid duplication
-the snippets are now included only to this extension and if you want to use them you have to install it explicitly.
-
-## Usage
-
-When installing the extension React development could be really fun
-![create react component](images/component.gif)
-
-As VS Code from version 0.10.10 supports React components syntax inside js files the snippets are available for JavaScript language as well.
-In the following example you can see the usage of a React stateless component with prop types snippets inside a js and not jsx file.
-![create react stateless component](images/stateless.gif)
-
+### In snippet list:
+~~REMOVED~~
+**CHANGED**
+___ 
 ## Snippets
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
@@ -51,7 +25,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |  `rrdc→` | class component skeleton with react-redux connect and dispatch   |
 |  `rccp→` | class component skeleton with prop types after the class         |
 |  `rcjc→` | class component skeleton without import and default export lines |
-|  `rcfc→` | class component skeleton that contains all the lifecycle methods |
+|  **`rcfc→`** | **class component skeleton that contains all the lifecycle methods** |
 |  `rwwd→` | class component without import statements                        |
 |   `rpc→` | class pure component skeleton with prop types after the class    |
 |   `rsc→` | stateless component skeleton                                     |
@@ -69,11 +43,11 @@ Below is a list of all available snippets and the triggers of each one. The **�
 |   `con→` | class default constructor with props                             |
 |  `conc→` | class default constructor with props and context                 |
 |   `est→` | empty state object                                               |
-|   `cwm→` | `componentWillMount method`                                      |
+|   ~~`cwm→`~~ | ~~`componentWillMount method`~~                                      |
 |   `cdm→` | `componentDidMount method`                                       |
-|   `cwr→` | `componentWillReceiveProps method`                               |
+|   ~~`cwr→`~~ | ~~`componentWillReceiveProps method`~~                               |
 |   `scu→` | `shouldComponentUpdate method`                                   |
-|  `cwup→` | `componentWillUpdate method`                                     |
+|  ~~`cwup→`~~ | ~~`componentWillUpdate method`~~                                     |
 |  `cdup→` | `componentDidUpdate method`                                      |
 |  `cwun→` | `componentWillUnmount method`                                    |
 |  `gsbu→` | `getSnapshotBeforeUpdate method`                                 |
